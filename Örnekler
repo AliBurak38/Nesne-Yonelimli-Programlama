@@ -1,0 +1,53 @@
+    int  toplam = 0;
+
+      for (int n = 1; n <= 10; n++)
+      {
+          toplam += n;
+          if(toplam >= 30)
+          {
+             Console.WriteLine("Toplam 30 den büyük sayi = {0} {1}",n,toplam);
+
+    break;
+       }
+
+      }
+
+      Console.WriteLine("Döngü bitti sayilarin toplami = {0}", toplam);
+      Console.ReadLine();
+
+    string gun;
+
+    int []sayilar= {1,2,3 };  
+    foreach (var sayi in sayilar)
+    {
+        Console.WriteLine(sayi);
+    }
+    Console.ReadLine();
+
+
+    int a, b, result;
+
+    Console.WriteLine("Lutfen birinci sayiyi giriniz:");
+    a = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Lutfen ikinci sayiyi giriniz:");
+    b = int.Parse(Console.ReadLine());
+
+    result = a % b;
+    if (b == 0)
+    {
+        Console.WriteLine("Tanimsiz islem");
+
+
+    };
+
+    if (result == 0)
+    {
+
+        Console.WriteLine("{0} sayisi {1} sayisina tam bolunuyor", a, b);
+    }
+
+    else
+    {
+        Console.WriteLine("{0} sayisi {1} sayisina tam bolunmuyor kalan = {2}", a, b, result);
+    }
+    Console.ReadLine();
