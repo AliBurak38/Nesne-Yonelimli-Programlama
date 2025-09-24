@@ -51,3 +51,29 @@
         Console.WriteLine("{0} sayisi {1} sayisina tam bolunmuyor kalan = {2}", a, b, result);
     }
     Console.ReadLine();
+
+
+ int a, b, c;
+
+ Console.WriteLine("A sayisini giriniz");
+ a=int.Parse(Console.ReadLine());
+ Console.WriteLine("B sayisini giriniz");
+ b=int.Parse(Console.ReadLine());
+ Console.WriteLine("C sayisini giriniz");
+ c=int.Parse(Console.ReadLine());
+
+
+ if (a > b && a > c)
+ {
+     Console.WriteLine("en buyuk sayi={0}",a);
+
+ }else if (b>a && b>c)
+ {
+     Console.WriteLine("En buyuk sayi= {0}",b);
+ }
+ else 
+ {
+     Console.WriteLine("En buyuk sayi={0}",c);
+
+ }
+ Console.ReadLine();
