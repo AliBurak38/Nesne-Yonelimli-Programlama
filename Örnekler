@@ -77,3 +77,88 @@
 
  }
  Console.ReadLine();
+--- 30.09.2025--------
+
+            double a, b, c;
+
+
+            Console.WriteLine("A kenarini giriniz:");
+            a = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("B kenarini giriniz:");
+            b = double.Parse(Console.ReadLine());
+
+            c = (Math.Pow(a, 2)) + (Math.Pow(b, 2));
+            c = Math.Sqrt(c);
+            Console.WriteLine("c={0}", c);
+            Console.ReadLine();
+
+            Console.WriteLine("Lutfen bir sayi giriniz:");
+            int a = int.Parse(Console.ReadLine());
+
+            switch (a)
+            {
+                case 1:
+                    Console.WriteLine("Pazartesi gününü seçtiniz");
+
+                    break;
+
+                case 2:
+                    Console.WriteLine("Sali gününü sectiniz");
+                    break;
+                case 3:
+                    Console.WriteLine("Carsamba gününü sectiniz");
+                    break;
+
+                case 4:
+                    Console.WriteLine("Persembe gününü sectiniz");
+                    break;
+                case 5:
+                    Console.WriteLine("Cuma gününü sectiniz");
+                    break;
+                default:
+                    Console.WriteLine("1 ile 7 arasında bir deger giriniz");
+                    break;
+
+            }
+
+            Console.WriteLine("Lutfen bir sayi giriniz");
+            int a, b, c = 0;
+            b = int.Parse(Console.ReadLine());
+
+            if(b<=2)
+            {
+                Console.WriteLine("Lutfen baska bir sayi giriniz");
+
+
+            }
+            for (a = 2; a < b; a++)
+            {
+                c = 0;
+                for (int j = 2; j < a; j++)
+                {
+                    if (a % j == 0)
+                    {
+                        c++;
+
+
+                    }
+
+                }
+
+                if (c==0)
+                {
+
+                    Console.WriteLine("{0} sayisine kadar olan sayiler  = {1}",b,a);
+                }
+
+
+
+            }
+
+            Console.ReadLine();
+
+        }
+    } 
+}
+
