@@ -162,3 +162,66 @@
     } 
 }
 
+        int i;
+
+        List<int> sayiler = new List<int>()
+            {
+
+                1,2, 3, 4, 5, 6, 7, 8, 9, 10
+            };
+
+
+            foreach(var sayi in sayiler) 
+            {
+
+                for (i = 2;i <= sayi; i++)
+                {
+                    if(i%sayi==0)
+                    {
+                        Console.WriteLine(sayi);
+
+
+                    }
+}
+
+            }
+
+            Console.ReadLine();
+
+
+int a = 0;
+
+            do
+            {
+                Console.WriteLine("Bir sayi giriniz");
+                a = int.Parse(Console.ReadLine());
+                if (a < 10)
+                {
+                    Console.WriteLine("Sayi 10 dan kucuk");
+
+                }
+
+                else { Console.WriteLine("Sayi 10 dan buyuk"); }
+
+
+
+
+
+            } while (a <= 10);
+
+
+            Console.WriteLine("Bir sayi giriniz");
+            a = int.Parse(Console.ReadLine());
+            while (a < 10)
+            {
+                Console.WriteLine("Sayi 10 dan kucuk baska bir sayi giriniz");
+                a = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Sayi 10 dan buyuk");
+            Console.ReadLine();
+        }
+
+
+    }
+}
+
