@@ -1,0 +1,113 @@
+          //string isim;
+          //int no;
+          //Bilgi2();
+          //isim=Console.ReadLine();
+          //no=int.Parse(Console.ReadLine());
+          //OgrBilgi(isim, no);
+          //int result=Toplamaİslem(a, b);
+
+          //int a , b,c;
+          //Console.WriteLine("1.Sayiyi giriniz");
+          //a = int.Parse(Console.ReadLine());
+          //Console.WriteLine("2.Sayiyi giriniz");
+          //b = int.Parse(Console.ReadLine());
+          //Console.WriteLine("3.Sayiyi giriniz");
+          //c=int.Parse(Console.ReadLine()); 
+          //BuyukSayi(a,b,c);
+
+          int a, b;
+          Console.WriteLine("1.Sayiyi giriniz");
+          a = int.Parse(Console.ReadLine());
+          Console.WriteLine("2.Sayiyi giriniz");
+          b = int.Parse(Console.ReadLine());
+          HesapMakinasi(a, b);
+          Console.ReadLine();
+
+
+
+      }
+
+static int HesapMakinasi(int number1, int number2)
+      {
+          int result, deger;
+          Console.WriteLine("Yapacaginiz islemi seciniz Toplama= 1 , Cıkarma=2, Bölme=3, Çarpma= 4");
+          result = int.Parse(Console.ReadLine());
+          switch (result)
+          {
+              case 1:
+                  deger = number1 + number2;
+                  Console.WriteLine("Toplama islem sonucu= {0}", deger);
+                  break;
+              case 2:
+                  deger = number1 - number2;
+                  Console.WriteLine("Cikarma islem sonucu= {0}", deger);
+                  break;
+              case 3:
+                  deger = number1 / number2;
+                  Console.WriteLine("Bolme islem sonucu= {0}", deger);
+                  break;
+              case 4:
+                  deger = number1 * number2;
+                  Console.WriteLine("Bolme islem sonucu= {0}", deger);
+                  break;
+              default:
+                  Console.WriteLine("Girilen deger yanlis");
+                  break;
+                  
+          }
+
+          return result;
+
+
+      }
+      //static void Bilgi2()
+      //{
+      //    Console.WriteLine("Adinizi ve numaranizi giriniz:");
+
+      //}
+
+      //static void Bilgi()
+      //{
+      //    Console.WriteLine("Toplamak istediginiz 2 sayiyi giriniz");
+
+      //}
+
+      //}
+      //static string OgrBilgi(string ad , int no)
+      //{
+      //    Console.WriteLine("İsminiz= {0}\nNumaraniz= {1}", ad, no);
+      //    return ad;
+
+
+      //}
+
+      //static int Toplamaİslem(int number1,int number2)
+      //{
+      //    int result= number1 + number2;
+      //    return result;
+
+
+      //}
+
+      //static int BuyukSayi(int number1, int number2, int number3)
+      //{
+      //    if (number1 > number2 && number1 > number3)
+      //    {
+
+      //        Console.WriteLine("Büyük sayi= {0}", number1);
+      //    }
+      //    else if (number2 > number3 && number2 > number1)
+      //    {
+
+      //        Console.WriteLine("Büyük sayi= {0}", number2);
+      //    }
+      //    else
+      //    {
+
+      //        Console.WriteLine("Büyük sayi = {0}", number3);
+      //    }
+      //    return number1;
+
+      //}
+
+      
