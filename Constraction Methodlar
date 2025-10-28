@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    public class Class1
+    {
+        internal class Program
+        {
+            public void Main(string[] args)
+            {
+                Class1 class1 = new Class1("Ali Burak","Öztürk");
+                Class1 class11 = new Class1();
+                Class1 class12 = new Class1("Ali Burak","Öztürk",21);
+                class12.IsımGetir();
+                Console.ReadLine();
+
+                
+
+            }
+
+
+        }
+        
+        string ad;
+        string soyad;
+        int no;
+        public Class1(string isim, string soyisim,int numara)
+        {
+            this.ad = isim;
+            this.soyad = soyisim;
+            this.no= numara;
+        }
+        public Class1(string isim, string soyisim)
+        {
+            this.ad = isim;
+            this.soyad = soyisim;
+        }
+
+        public Class1()
+        {
+            
+        }
+        public void IsımGetir()
+        {
+            Console.WriteLine(ad, soyad, no);
+
+
+        }
+
+
+    }
+}
