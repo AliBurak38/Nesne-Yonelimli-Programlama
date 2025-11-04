@@ -1,0 +1,72 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    public class Program
+    {
+        public int number2, number3;
+        static void Main(string[] args)
+        {
+            Example ex3 = new Example(); // nesne oluşturdum
+            ex3.Aracal("Fiat"); // nesneme ait static olmayan methoda eriştim (static sınıflarda nesne yapısı olmaz)!
+            var degis = ex3.Aracal("Honda"); // nesneme ait methoda değer atadım bunu da değişkende tuttum
+            Console.WriteLine($"Aracınız ={degis} "); // consola yazdırdım
+
+          
+
+          var isim=Example.AdGetir("Mehmet");  // static sınıf olduğu için nesne oluşturulmaz doğrudan kullanılır.
+            Console.WriteLine($"İsminiz = {isim}"); // bunu da konsol da gösterdim. 
+
+            Example ex = new Example();
+            Console.WriteLine("2 adet sayi giriniz");
+            var deger1 = ex.sayi2 = int.Parse(Console.ReadLine()); // nesneme ait methoda parametre olarak kullanıcıdan veri aktardım 
+            var deger2 = ex.sayi3 = int.Parse(Console.ReadLine()); // nesneme ait methoda parametre olarak kullanıcıdan veri aktardım 
+            Example ex2 = new Example(deger1, deger2); // bu methodumu yeni değerleri ile çağırdım.
+            Console.ReadLine(); 
+
+
+           
+        }
+
+        public class Example // ayrı bir sınıf oluşturdum 
+        {
+           public int sayi2 ,sayi3,sayi4; // değişkenler atadım
+            public  Example() // ctor yapısı kullandım
+            {
+                
+            }
+
+            public Example(int number1, int number2) // parametreli ctor kullandım 
+            {
+               this.sayi2 = number1; // class içine yazılan değişkeni atadım number1 e çünkü static bir sınıf değil 
+                this.sayi3 = number2;
+                var result = number1 + number2;
+                Console.WriteLine (result);
+            }
+
+            public  string Aracal(string name) // static olmayan bir method yazdım 
+            {
+                var result = name;
+                return result;
+
+
+            }
+
+            public static  string AdGetir(string name) // static olan ve geri dönüş değerine sahip bir method yazdım 
+            {
+                var result = name; 
+                return result; // name değişkenini geri döndürüyor
+
+
+            }
+
+        }
+
+       
+    }
+}
