@@ -163,6 +163,46 @@ namespace ConsoleApp1
     }
 }
 
- 
+
+
+static void Main(string[] args)
+{
+    Kediler k = new Kediler();
+    k.GetTip();
+   Console.ReadLine();
+
+}
+
+
+public class Kediler :Hayvanlar
+{
+ Hayvanlar h = new Hayvanlar();
+    
+    public Kediler()
+    {
+        h.hayvanisim = "Minnoş";
+
+        Console.WriteLine("Kedinin Türü belirlendi");
+    }
+
+   
+
+}
+public class Hayvanlar
+{
+    public string hayvanisim;
+   
+
+    public void GetTip()
+    {
+
+
+
+        Console.WriteLine("Tür belirlendi");
+    }
+
+
+
+}
  */
 
