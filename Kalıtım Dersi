@@ -1,0 +1,168 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*namespace ConsoleApp1
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            kediler cat = new kediler();
+            int ayak = cat.DortAyak(4);
+            Console.WriteLine("Kedi ayak sayisi = " + ayak);
+            Console.ReadLine();
+
+        }
+
+
+        public class hayvanlar
+        {
+            public int _ayaksayisi;
+            public int DortAyak(int sayi)
+            {
+                return sayi;
+
+
+            }
+
+            public int İkiAyak(int sayi)
+            {
+                return sayi;
+
+
+            }
+            public int Sürüngen(int sayi)
+            {
+                return sayi;
+
+
+            }
+
+
+
+        }
+        public class kediler : hayvanlar
+        {
+
+
+
+
+        }
+    }
+} 
+
+ 
+   public class Program
+    {
+        static void Main(string[] args)
+        {
+            Araba car = new Araba();    
+            car.ArabaCalistir();
+            Console.ReadLine();
+
+        }
+
+
+        public class Araba
+        {
+            Motor m = new Motor();  
+            public void ArabaCalistir()
+            {
+                Console.WriteLine("Araç Eku beyni açıldı");
+                Console.WriteLine("Araç Enjektörler ısındı.");
+                Console.WriteLine("Yakıt Pompası yakıt sistemini devreye aldı ");
+
+                m.MotorAc();
+
+
+            }
+            public void ArabaKapat()
+            {
+                m.MotorKapat();
+
+
+            }
+
+
+
+        }
+        public class Motor
+        {
+            public void MotorAc()
+            {
+                Console.WriteLine("Motor Açıldı");
+
+
+
+            }
+            public void MotorKapat()
+            {
+
+                Console.WriteLine("Motor Kapatıldı");
+            }
+
+
+
+
+        }
+    }
+}
+
+
+// bu kıısmdan soru gelir dikkatli ol :)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Kediler k = new Kediler();
+            k.GetTip();
+           Console.ReadLine();
+
+        }
+
+
+        public class Kediler :Hayvanlar
+        {
+            public Kediler()
+            {
+
+                Console.WriteLine("Kedinin Türü belirlendi");
+            }
+
+           
+
+        }
+        public class Hayvanlar
+        {
+          
+           
+
+            public void GetTip()
+            {
+
+
+
+                Console.WriteLine("Tür belirlendi");
+            }
+
+
+
+        }
+    }
+}
+
+ 
+ */
+
