@@ -204,5 +204,59 @@ public class Hayvanlar
 
 
 }
+
+
+namespace ConsoleApp1
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            
+           Console.ReadLine();
+
+        }
+
+
+        public class Cokgenler
+        {
+
+            public int KisaKenar;
+            public int UzunKenar;
+
+            protected int alanhesapla(int kisakenar, int uzunkenar)
+            {
+               
+                int result = kisakenar * uzunkenar;
+                return result;
+
+
+            }
+            public int CevreHesapla(int kisakenar, int uzunkenar)
+            {
+               
+                int result = 2 * (kisakenar + uzunkenar);
+                return result;
+
+
+            }
+
+        }
+
+        public class Dikdörtgen:Cokgenler
+        {
+            public int KisaKenar=10;
+            public int UzunKenar=20;
+
+            public Dikdörtgen()
+            {
+                alanhesapla(KisaKenar, UzunKenar);
+            }
+
+
+
+
+        }
+        
  */
 
